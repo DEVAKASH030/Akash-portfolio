@@ -172,24 +172,33 @@ section {
 
 .autotyping {
   font-family: "Verdana", serif;
-  color: #333d46;
   font-size: 2.5em;
   font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.1vw #770753;
+  background: var(--gradient-color-bg);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  transition: 0.6s;
+  letter-spacing: 2px;
+  animation: moveText 3s linear infinite;
+  animation-delay: 2s;
 }
 .autotyping > span {
   color: #f26f46;
   font-size: 1.2em;
   font-weight: 700;
   color: transparent;
-    -webkit-text-stroke: 0.1vw #770753;
-    background: var(--gradient-color-bg);
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    transition: 0.6s;
-    letter-spacing: 2px;
-    animation: moveText 3s linear infinite;
-    animation-delay: 2s;
+  -webkit-text-stroke: 0.1vw #770753;
+  background: var(--gradient-color-bg);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  transition: 0.6s;
+  letter-spacing: 2px;
+  animation: moveText 3s linear infinite;
+  animation-delay: 2s;
 }
 /Shrinking for tablet/ @media (min-width: 481px) and (max-width: 768px) {
   .autotyping {
